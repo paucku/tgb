@@ -6,3 +6,8 @@ Search files through the file system.
 
 # L - list files
 List files in the current folder.
+
+Example:
+`l alabala protokala`
+
+This command will list all files in the current folder wchich contain bot "alabala" and "portokala".
