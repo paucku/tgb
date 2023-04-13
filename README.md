@@ -30,3 +30,6 @@ g alabala tintiri mintiri
 ```
 
 This commad will find recursively from the point it was invoked all files which contain all of the strings "alabala", "tintiri" and "mintiri".
+
+# rename_add_creation_date_in_the_beginning.rb
+This script adds modification time in the beginning of all files in a folder. Must be executed in the folder where the files are.
