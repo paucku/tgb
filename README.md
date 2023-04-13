@@ -1,5 +1,5 @@
 # Taggo-baggo
-Tools to organize, manipulate, edit, move and copy files in bulk.
+Tools to organize, manipulate, edit, move and copy files in bulk. And tagging them.
 
 # Q - query files
 Search files through the file system.
