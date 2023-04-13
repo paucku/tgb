@@ -20,7 +20,7 @@ l alabala protokala
 
 This command will list all filenamess in the current folder which contain bot "alabala" and "portokala".
 
-#G - search inside files
+# G - search inside files
 Search files through the file system which contain some text.
 
 Example:
