@@ -19,3 +19,14 @@ l alabala protokala
 ```
 
 This command will list all filenamess in the current folder which contain bot "alabala" and "portokala".
+
+#G - search inside files
+Search files through the file system which contain some text.
+
+Example:
+
+```
+g alabala tintiri mintiri
+```
+
+This commad will find recursively from the point it was invoked all files which contain all of the strings "alabala", "tintiri" and "mintiri".
