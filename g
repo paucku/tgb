@@ -21,7 +21,3 @@ if DEBUG == 1
 end
 
 system(query_command) # new version - with find
-
-
-
-#grep -r $@
