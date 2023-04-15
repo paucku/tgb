@@ -42,3 +42,6 @@ Tag files in a folder based on the name of the folder (adds the name of the fold
 # context
 Set the context if there are arguments.
 Show the context if there are no arguments.
+
+# SR
+SEARCH & REPLACE in files. Replaces the first argument to the second argument in ALL files recursively in the current directory.
