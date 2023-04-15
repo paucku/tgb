@@ -1,0 +1,38 @@
+#!/usr/bin/env ruby
+# encoding: utf-8
+#
+
+require 'date'
+require "pp"
+
+DEBUG = 1
+
+if ARGV.length == 2
+	DAYS_AROUND = ARGV[1].to_i
+else
+	DAYS_AROUND = 0
+end
+
+current_file = ARGV[0]
+dates_to_match = []
+
+STDERR.puts current_file if DEBUG == 1
+
+date_string = current_file[/\d{4}-\d{2}-\d{2}/]
+
+date = Date.parse(date_string).to_date
+
+(-DAYS_AROUND..DAYS_AROUND).each do |index|
+	STDERR.puts date + index if DEBUG == 1
+	dates_to_match << (date + index).to_s
+end
+
+
+dates_to_match_string = dates_to_match.join("*\" -o -name \"")
+
+STDERR.puts dates_to_match_string #if DEBUG == 1
+
+search_command = "find ~ -type f -name \"#{dates_to_match_string}*\" 2>/dev/null"
+
+puts search_command
+system(search_command)
