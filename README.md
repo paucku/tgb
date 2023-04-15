@@ -34,6 +34,11 @@ This commad will find recursively from the point it was invoked all files which 
 # rename_add_creation_date_in_the_beginning.rb
 This script adds modification time in the beginning of all files in a folder. Must be executed in the folder where the files are.
 
-# Tagit - tag files based on the folder name
+# Tagit
+Tag files based on the folder name.
 
 Tag files in a folder based on the name of the folder (adds the name of the folder in the back of the files in the folder). Must be executed in the folder where the files are.
+
+# context
+Set the context if there are arguments.
+Show the context if there are no arguments.
