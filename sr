@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+# encoding: utf-8
+# SEARCH and REPLACE in files
+
+if ARGV.length == 2
+	search_text = ARGV[0]
+	replace_text = ARGV[1]
+else
+	puts "Трябват два аргумента"
+	exit 1
+end
+
+Dir.glob("./**/*") do |file_name|
+	text = File.read(file_name)
+	replace = text.gsub!(search_text, replace_text)
+	File.open(file_name, "w") { |file| file.puts replace }
+end
