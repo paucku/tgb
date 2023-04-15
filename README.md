@@ -47,4 +47,4 @@ Show the context if there are no arguments.
 SEARCH & REPLACE in files. Replaces the first argument to the second argument in ALL files recursively in the current directory.
 
 # SAMEDATE
-Finds all files which are tagged with the same date. If a NUMBER is given as second argument it will also give all files tagged with the same date and NUMBER of days before and after this date.
+Finds all files which are tagged with the same date. The date is given in the first argument in the form YYYY-MM-DD. If a NUMBER is given as second argument it will also give all files tagged with the same date and NUMBER of days before and after this date.
