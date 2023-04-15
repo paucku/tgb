@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+# encoding: utf-8
+# Sets the context if there are arguments
+# Show context if there are no arguments
+
+require 'fileutils'
+
+context_filename = "CONTEXT"
+context_file_path = Dir.home + ".local/share/tgb/"
+puts context_file_path + "does not exsist"
+
+FileUtils.mkdir_p(context_file_path) unless File.directory?(context_file_path)
+
+if ARGV.length < 1
+	file = File.open context_file_path + context_filename
+	puts context_file_path + context_filename
+	file.each do |line|
+		puts line
+	end
+else
+	new_context = ARGV.join(" ")
+	file = File.open context_file_path + context_filename, "w"
+	puts context_file_path + context_filename
+	file.write new_context
+end
