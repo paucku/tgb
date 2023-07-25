@@ -11,8 +11,13 @@ if DEBUG == 1
     STDERR.print "query string: ", query_string #if DEBUG == 1
     STDERR.puts
 end
+if (/darwin/ =~ RUBY_PLATFORM) != nil
+    query_command = "gfind "
+else
+	query_command = "find"
+end
 
-query_command = "find  2>/dev/null| egrep -i \"#{query_string}\""
+query_command += " 2>/dev/null| egrep -i \"#{query_string}\""
 
 if DEBUG == 1
     STDERR.puts
