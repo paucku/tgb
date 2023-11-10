@@ -1,5 +1,7 @@
 # DISCLAIMER
-These scripts may be dangerous. Use them on your own risk!
+These scripts may be dangerous. They serve my own niche purposes and I do not have yet the skills to make them safer and durable.
+
+Use them on your own risk!
 
 # Taggo-baggo
 Tools to organize, manipulate, edit, move and copy files in bulk. And tagging them.
