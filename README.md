@@ -1,3 +1,6 @@
+# DISCLAIMER
+These scripts may be dangerous. Use them on your own risk!
+
 # Taggo-baggo
 Tools to organize, manipulate, edit, move and copy files in bulk. And tagging them.
 
@@ -48,3 +51,16 @@ SEARCH & REPLACE in files. Replaces the first argument to the second argument in
 
 # SAMEDATE
 Finds all files which are tagged with the same date. The date is given in the first argument in the form YYYY-MM-DD. If a NUMBER is given as second argument it will also give all files tagged with the same date and NUMBER of days before and after this date.
+
+# bg-bg.rb
+A misspelling corector when typing with the wrong layout on the keyboard.
+
+If I want to write in the search engine "where can i buy honey" but did not switch the keyboard to English layout, I will have "угеие ъьх с фкщ гдхещ". Now to not need to type it althogether, I open a terminal application type bg-bg.rb and paste the above mistaken string (without the quotes). The result is a correct string which now I copy and paste in the search engine.
+
+```
+> bg-bg.rb угеие ъьх с фкщ гдхещ
+where can i buy honey
+```
+TODO
+- [ ] To change the name bg-bg to something more sensible
+- [ ] to make it copy directly into the clipboard so I can waste no time.
